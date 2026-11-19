@@ -1,0 +1,14 @@
+{
+  "name": "workspace-apps",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Unified runner for all applications in 23-25",
+  "scripts": {
+    "start": "node run-all.js",
+    "dev": "node run-all.js",
+    "dev:backend": "cd mern-crud-app-main/backend && node server.js",
+    "dev:mern-fe": "cd mern-crud-app-main/frontend && npm run dev -- --port 5173",
+    "dev:expenses": "cd react-frontend-crud-app-main && npm run dev -- --port 5174",
+    "dev:router": "cd react-router-app-main && npm run dev -- --port 5175"
+  }
+}
